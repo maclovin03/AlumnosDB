@@ -8,6 +8,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.alumnosdbapp.baseDatos.Alumno
+import com.example.alumnosdbapp.baseDatos.dbAlumnos
 
 class MainActivity : AppCompatActivity() {
     private lateinit var btnagregar: Button

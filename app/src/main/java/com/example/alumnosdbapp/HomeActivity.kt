@@ -1,36 +1,57 @@
 package com.example.alumnosdbapp
 
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.example.alumnosdbapp.databinding.ActivityHomeBinding
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityHomeBinding
+    private lateinit var bottomNavigationView: BottomNavigationView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_home)
 
-        binding = ActivityHomeBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        bottomNavigationView = findViewById(R.id.nav_view)
 
-        val navView: BottomNavigationView = binding.navView
+        if(savedInstanceState == null){
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_home)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-            )
-        )
-        setSupportActionBar(binding.toolbar)
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+            cambiarFrame(HomeFragment())
+
+        }
+
+        bottomNavigationView.setOnItemSelectedListener {
+                menuItem ->
+
+            when(menuItem.itemId){
+
+                R.id.btnmHome -> {
+                    cambiarFrame(HomeFragment())
+                    true
+                }
+                R.id.btnmalumno ->{
+                    cambiarFrame(AlumnosFragment())
+                    true
+                }
+                R.id.btnmlistado ->{
+                    cambiarFrame(ListadoFragment())
+                    true
+                }
+                R.id.btnmSalir -> {
+                    cambiarFrame(SalirFragment())
+                    true
+                }
+                else -> false
+            }
+        }
+    }
+
+    fun cambiarFrame(fragment: Fragment){
+        supportFragmentManager.beginTransaction().
+        replace(R.id.navHost,fragment).commit()
+
+
     }
 }

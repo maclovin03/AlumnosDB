@@ -1,13 +1,10 @@
-package com.example.alumnosdbapp.ui.dashboard
+package com.example.alumnosdbapp
 
 import android.content.Context
 import android.util.Log
-import androidx.core.content.ContentProviderCompat.requireContext
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.alumnosdbapp.Alumno
-import com.example.alumnosdbapp.dbAlumnos
+import com.example.alumnosdbapp.baseDatos.Alumno
+import com.example.alumnosdbapp.baseDatos.dbAlumnos
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

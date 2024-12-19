@@ -1,9 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".HomeFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:textColor="@color/micolor"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="@color/azul"
+        android:padding="10sp">
+    </TextView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/foto"
+        android:layout_margin="20sp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_alumno"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorletra"
+        android:paddingBottom="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/matricula"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorletra"
+        android:paddingBottom="5sp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/carrera"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorletra"
+        android:paddingBottom="5sp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/materia"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorletra"
+        android:paddingBottom="5sp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/universidad"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorletra"
+        android:paddingBottom="15sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/correo"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorletra"
+        android:paddingBottom="5sp">
+    </TextView>
+</LinearLayout>
+
+</FrameLayout>

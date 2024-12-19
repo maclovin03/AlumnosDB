@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.alumnosdbapp.Alumno
+import com.example.alumnosdbapp.baseDatos.Alumno
 import com.example.alumnosdbapp.R
 import com.example.alumnosdbapp.databinding.AlumnoLayoutBinding
 

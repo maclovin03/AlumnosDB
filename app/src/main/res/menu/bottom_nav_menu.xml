@@ -2,18 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="Inicio" />
+        android:id="@+id/btnmHome"
+        android:icon="@drawable/baseline_inicio"
+        android:title="Inicio">
+
+    </item>
+    <item
+        android:id="@+id/btnmalumno"
+        android:icon="@drawable/baseline_alumno"
+        android:title="Alumnos">
+
+    </item>
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="Alumnos" />
+        android:id="@+id/btnmlistado"
+        android:icon="@drawable/baseline_listaalumnos"
+        android:title="Listado">
 
+    </item>
     <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/baseline_person_add_24"
-        android:title="Consultas" />
+        android:id="@+id/btnmSalir"
+        android:icon="@drawable/baseline_salir"
+        android:title="Salir" />
 
 </menu>

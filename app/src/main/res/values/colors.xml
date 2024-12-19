@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="micolor">#878787</color>
+    <color name="colorletra">#E91EF1</color>
+    <color name="azul">#0323F1</color>
+
 </resources>

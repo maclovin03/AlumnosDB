@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.alumnosdbapp.ui.home.HomeFragment"
+        android:name="com.example.alumnosdbapp.HomeFragment"
         android:label="Inicio"
         tools:layout="@layout/fragment_home" />
 
@@ -28,7 +28,7 @@
         android:id="@+id/navigation_notifications"
         android:name="com.example.alumnosdbapp.ui.notifications.NotificationsFragment"
         android:label="Consultas"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/alumnos_fragment" />
     <fragment
         android:id="@+id/alumnoDetailfragment"
         android:name="com.example.alumnosdbapp.ui.dashboard.AlumnoDetailfragment"

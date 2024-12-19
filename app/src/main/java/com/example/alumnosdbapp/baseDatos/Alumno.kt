@@ -1,4 +1,4 @@
-package com.example.alumnosdbapp
+package com.example.alumnosdbapp.baseDatos
 
 data class Alumno(
     var id: Int,
